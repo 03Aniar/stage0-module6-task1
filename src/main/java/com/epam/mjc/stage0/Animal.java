@@ -10,8 +10,8 @@ public class Animal {
         this.numberOfPaws = numberOfPaws;
         this.hasFur = hasFur;
     }
-    String getDescription() {
+    public String getDescription() {
         String x =  (hasFur?"a":"no");
-        return String.format("This animal is mostly %s. It has %d paws and %s fur.", color, numberOfPaws,x);
+        return String.format("This animal is mostly %s. It has %d %s and %s fur.", color, numberOfPaws, numberOfPaws==1?"paw":"paws",x);
     }
 }
